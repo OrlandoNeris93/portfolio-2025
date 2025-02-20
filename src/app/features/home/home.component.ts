@@ -11,118 +11,150 @@ import { RouterModule } from '@angular/router';
       <div class="container text-center">
         <h1 class="fade-in">¡Hola, soy <span class="highlight">Orlando Neris</span>!</h1>
         <p class="fade-in delay-1">
-          Desarrollador Web <span class="highlight">Full-Stack</span> | DBA con más de 4 años de experiencia en tecnologías modernas.
+          Desarrollador Web <span class="highlight">Full-Stack</span> | DBA con experiencia en tecnologías modernas.
         </p>
         <div class="fade-in delay-2">
-          <a routerLink="/projects" class="btn btn-primary btn-lg me-2">Ver Proyectos</a>
+          <a routerLink="/projects" class="btn btn-primary btn-lg">Mis Proyectos</a>
           <a routerLink="/contact" class="btn btn-outline-light btn-lg">Contáctame</a>
         </div>
       </div>
     </section>
 
-    <section class="about-me container text-center">
-      <h2>Sobre mí</h2>
-      <p>
-        ¡Hola! Soy <strong>Orlando Neris</strong>, un desarrollador web Full-Stack y DBA con más de 4 años de experiencia creando soluciones web de alto rendimiento y escalabilidad. A lo largo de mi carrera, me he especializado en el diseño, desarrollo e implementación de aplicaciones web modernas y complejas, con un enfoque en la <strong>optimización de bases de datos</strong>, arquitecturas <strong>RESTful</strong>, <strong>microservicios</strong> y metodologías ágiles.
-      </p>
-      <p>
-        Mi experiencia incluye el desarrollo de soluciones tanto en el <strong>frontend</strong> como en el <strong>backend</strong>, lo que me permite tener una visión integral de todo el proceso de desarrollo de software. Estoy acostumbrado a trabajar con tecnologías como <strong>PHP</strong> (versiones 5.x, 7.x, 8.x), <strong>JavaScript</strong>, <strong>PostgreSQL</strong>, <strong>PL/SQL</strong>, <strong>PostGIS</strong>, y <strong>Docker</strong>, y tengo un dominio sólido en la <strong>optimización de consultas SQL</strong>, diseño de bases de datos <strong>relacionales</strong> y <strong>espaciales</strong>, además de gestionar eficientemente <strong>servidores GNU/Linux</strong>.
-      </p>
-      <p class="skills">
-        <strong>Tecnologías que manejo:</strong><br />
-        <span>PHP, JavaScript, Python, PL/SQL, Ajax, JQuery, Bootstrap</span><br />
-        <span>PostgreSQL, MySQL, SQL Server, PostGIS</span><br />
-        <span>Docker, Git, Jira, Gitea, Postman</span><br />
-        <span>Microservicios, RESTful APIs, CRON, Linux, Bash</span>
-      </p>
-      <p>
-        Mi enfoque es siempre entregar soluciones robustas y escalables, adaptadas a las necesidades del cliente. Me apasiona la creación de <strong>aplicaciones web intuitivas</strong> y <strong>bien estructuradas</strong>, con un diseño limpio y eficiente, y que ofrezcan la mejor experiencia de usuario posible.
-      </p>
-      <p>
-        Además, tengo experiencia trabajando en entornos colaborativos utilizando herramientas de control de versiones como <strong>Git</strong> y plataformas como <strong>Jira</strong> para gestionar proyectos. Mi trabajo está centrado en seguir los mejores estándares de <strong>programación</strong>, principios <strong>SOLID</strong> y patrones de diseño que me permitan crear aplicaciones mantenibles y eficientes.
-      </p>
-      <p>
-        Si estás buscando un desarrollador web versátil, con una sólida base en backend y una visión clara de las necesidades de <strong>escalabilidad</strong> y <strong>rendimiento</strong>, estaré encantado de poder colaborar en tu proyecto.
-      </p>
+    <section class="about-me">
+      <div class="container">
+        <h2 class="slide-up">Sobre Mí</h2>
+        <p class="fade-in">
+          Soy <strong>Orlando Neris</strong>, un <strong>desarrollador web Full-Stack</strong> y <strong>DBA</strong> con más de 4 años de experiencia.
+          Especializado en <strong>optimización de bases de datos</strong>, <strong>arquitecturas RESTful</strong> y <strong>microservicios</strong>.
+        </p>
+        <p class="fade-in delay-1">
+          Trabajo con tecnologías como <strong>PHP, JavaScript, PostgreSQL, Docker</strong> y más.
+          Me apasiona desarrollar <strong>soluciones eficientes y escalables</strong>.
+        </p>
+      </div>
     </section>
 
     <section class="tech-stack">
       <div class="container text-center">
-        <h2>Tecnologías con las que trabajo</h2>
-        <div class="tech-icons">
-          <img src="assets/php-icon.png" alt="PHP" />
-          <img src="assets/js-icon.png" alt="JavaScript" />
-          <img src="assets/python-icon.png" alt="Python" />
-          <img src="assets/sql-icon.png" alt="SQL" />
-          <img src="assets/linux-icon.png" alt="Linux" />
-          <img src="assets/git-icon.png" alt="Git" />
+        <h2 class="slide-up">Tecnologías con las que trabajo</h2>
+        <div class="grid">
+          <div class="tech-item"><img src="assets/php-icon.png" alt="PHP"><span>PHP</span></div>
+          <div class="tech-item"><img src="assets/js-icon.png" alt="JavaScript"><span>JavaScript</span></div>
+          <div class="tech-item"><img src="assets/python-icon.png" alt="Python"><span>Python</span></div>
+          <div class="tech-item"><img src="assets/sql-icon.png" alt="SQL"><span>SQL</span></div>
+          <div class="tech-item"><img src="assets/linux-icon.png" alt="Linux"><span>Linux</span></div>
+          <div class="tech-item"><img src="assets/git-icon.png" alt="Git"><span>Git</span></div>
         </div>
       </div>
     </section>
   `,
   styles: [`
+    /* === HERO SECTION === */
     .hero {
-      height: 90vh;
+      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #2e4c91, #3c71c2);
+      background: linear-gradient(135deg, #1b2735, #090a0f);
       color: white;
       text-align: center;
       position: relative;
     }
     .highlight {
-      color: #f8d210;
+      color: #f39c12;
     }
     .btn {
-      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
     }
-    .btn:hover {
+    .btn-primary {
+      background: #f39c12;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #e67e22;
+      transform: scale(1.05);
+    }
+    .btn-outline-light {
+      border: 2px solid white;
+      color: white;
+    }
+    .btn-outline-light:hover {
+      background: white;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    /* === SOBRE MÍ === */
+    .about-me {
+      padding: 4rem 2rem;
+      background: #ecf0f1;
+      color: #333;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    /* === STACK TECNOLÓGICO === */
+    .tech-stack {
+      padding: 4rem 2rem;
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+    .tech-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .tech-item:hover {
       transform: scale(1.1);
-      background-color: #f8d210;
+      background: rgba(255, 255, 255, 0.2);
     }
+    .tech-item img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    .tech-item span {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    /* === ANIMACIONES === */
     .fade-in {
       opacity: 0;
       animation: fadeIn 1s ease-in forwards;
     }
+    .slide-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideUp 1s ease-in forwards;
+    }
     .delay-1 { animation-delay: 0.5s; }
     .delay-2 { animation-delay: 1s; }
+    
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    .about-me {
-      padding: 4rem 0;
-      background-color: #f9f9f9;
-      color: #333;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .skills {
-      font-size: 1.2rem;
-      color: #555;
-      margin-top: 1rem;
-    }
-
-    .tech-stack {
-      background: #1e3c72;
-      color: white;
-      padding: 4rem 0;
-    }
-
-    .tech-icons img {
-      width: 50px;
-      height: 50px;
-      margin: 0 15px;
-      opacity: 0.8;
-      transition: transform 0.3s ease;
-    }
-
-    .tech-icons img:hover {
-      transform: scale(1.2);
-      opacity: 1;
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   `]
 })
