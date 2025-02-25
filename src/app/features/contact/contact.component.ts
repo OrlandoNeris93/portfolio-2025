@@ -59,7 +59,7 @@ declare const grecaptcha: any; // ✅ Declaramos grecaptcha para evitar errores 
     /* === CONTENEDOR === */
     .contact {
       padding: 4rem 0;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      // background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: white;
       text-align: center;
     }
@@ -209,7 +209,7 @@ export class ContactComponent {
   private async obtenerTokenReCaptcha(): Promise<string> {
     return new Promise((resolve, reject) => {
       if (typeof grecaptcha !== 'undefined') {
-        grecaptcha.execute('TU_CLAVE_DEL_SITIO', { action: 'submit' }).then((token: string) => {
+        grecaptcha.execute('6LdmgN0qAAAAAALmxWrxFuGb8RWDhoFFqbeLMGdE', { action: 'submit' }).then((token: string) => {
           resolve(token);
         }).catch(() => reject(''));
       } else {

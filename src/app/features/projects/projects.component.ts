@@ -31,7 +31,7 @@ import { RouterModule } from '@angular/router';
     /* === SECCIÓN PROYECTOS === */
     .projects {
       padding: 4rem 2rem;
-      background: linear-gradient(135deg, #1b2735, #090a0f);
+      //background: linear-gradient(135deg, #1b2735, #090a0f);
       color: white;
       text-align: center;
     }

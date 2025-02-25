@@ -55,7 +55,7 @@ import { RouterModule } from '@angular/router';
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #1b2735, #090a0f);
+      //background: linear-gradient(135deg, #1b2735, #090a0f);
       color: white;
       text-align: center;
       position: relative;

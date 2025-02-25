@@ -1,0 +1,9 @@
+:host {
+    display: block !important; // Asegura que el componente se renderice
+    visibility: visible !important; // Evita que sea ocultado por CSS
+    opacity: 1 !important; // Evita que esté transparente
+    width: 100% !important; // Asegura que ocupe espacio
+    height: auto !important; // Ajusta la altura automáticamente
+    z-index: 9999 !important; // Lo coloca en la parte superior
+  }
+  
